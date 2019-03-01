@@ -62,6 +62,17 @@ public class Expression {
         else if (this.op == null) {
             return this.expr1.evaluate();
         }
+        else if (this.op.getType() == Token.Type.UNARY_OP) {
+            String un_op = this.op.toString();
+            DataValue rhsValue = this.expr2.evaluate();
+
+
+                if (un_op.equals("len")) {
+                    String str1 = rhsValue.toString();
+                    return new IntegerValue(str1.length() - 2);
+                }
+
+        }
         else if (this.op.getType() == Token.Type.BINARY_OP) {
             DataValue lhsValue = this.expr1.evaluate();
             DataValue rhsValue = this.expr2.evaluate();

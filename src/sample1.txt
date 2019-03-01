@@ -1,0 +1,39 @@
+var x = 5
+output x
+
+var y = ( x + 1 )
+output y
+
+output ( ( x * y ) + 1 )
+
+x = ( ( x / 2 ) + ( y * 2 ) )
+output x 
+
+var word = "foo"
+var longer =  ( word + "bar" )
+output  ( "longer=" + longer )
+
+repeat 5 {
+  output "howdy"
+}
+
+var rep = 3
+var num = 1
+repeat ( 2 * rep ) {
+  output num
+  num = ( num * 2 )
+}
+
+var flag = true
+output flag
+
+output ( flag == true )
+
+output ( "foo" != "foo" )
+
+output  ( 3 > 2 )
+
+var test = ( "smith" <= "smooth" )
+output test
+
+output ( ( 3 / 2 ) )

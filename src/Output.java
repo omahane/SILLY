@@ -4,7 +4,9 @@
  *   @version 2/3/19
  */
 public class Output extends Statement {
-    private Expression expr;
+    private Expression expr; // need to be able store this expression for the purposes of outputting it
+    // probably need to create an ArrayList to give a list of expressions
+
 
     /**
      * Reads in an output statement from the specified TokenStream.

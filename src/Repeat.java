@@ -7,7 +7,9 @@ import java.util.ArrayList;
  */
 public class Repeat extends Statement {
     private Expression expr;
-    private ArrayList<Statement> stmts;
+    private ArrayList<Statement> stmts; // all the statements
+    // statements of statements, potentially
+    // can be a recursive structure
 
     /**
      * Reads in a repeat statement from the specified stream
@@ -25,7 +27,7 @@ public class Repeat extends Statement {
         }
 
         this.stmts = new ArrayList<Statement>();
-        while (!input.lookAhead().toString().equals("}")) {
+        while (!input.lookAhead().toString().equals("}")) { // keeps looking until the closing brace
             this.stmts.add(Statement.getStatement(input));
         }
         input.next();
@@ -35,12 +37,12 @@ public class Repeat extends Statement {
      * Executes the current repeat statement.
      */
     public void execute() throws Exception {
-        DataValue repVal = this.expr.evaluate();
+        DataValue repVal = this.expr.evaluate(); // evaluate expression
         if (repVal.getType() != Token.Type.INTEGER) {
             throw new Exception("RUNTIME ERROR: repeat expression must be a number");
         }
         else {
-            int numReps = ((Integer) repVal.getValue());
+            int numReps = ((Integer) repVal.getValue()); // have to cast because DataValue is an object
             for (int i = 0; i < numReps; i++) {
                 for (Statement stmt : this.stmts) {
                     stmt.execute();

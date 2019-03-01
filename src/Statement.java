@@ -3,7 +3,10 @@
  *   @author Dave Reed
  *   @version 2/3/19
  */
-public abstract class Statement {
+public abstract class Statement { // abstract is a hybrid between class and interface
+    // has methods that are undefined
+    // can't create a statement
+    // use abstract class when there are somethings to do and some to put off
     public abstract void execute() throws Exception;
     public abstract String toString();
 
@@ -12,11 +15,13 @@ public abstract class Statement {
      *   @param input the TokenStream from which the program is read
      *   @return the next Statement in the program
      */
+    // different because it can have some things implemented
+    // some things are meant to be overwritten
     public static Statement getStatement(TokenStream input) throws Exception {
         Token first = input.lookAhead();
 
         if (first.toString().equals("output")) {
-            return new Output(input);
+            return new Output(input); // this is a constructor
         }
         else if (first.toString().equals("import")) {
             return new Import(input);

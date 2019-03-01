@@ -1,0 +1,41 @@
+var str = "foobar"
+output ( len str )
+
+output { ( str index 0 ) "..." 
+         ( str index ( ( len str ) - 1 ) ) }
+
+var boo = true
+var opp = ( not boo )
+output { boo opp }
+
+output ( true and ( false or true ) )
+
+output  {  }
+  
+var count = 5
+while ( count > -1 ) {
+  output count 
+  count = ( count - 1 )
+}
+
+var text = "Jays"
+var i = 0
+while ( i < ( len text ) ) {
+  output ( text index i )
+  i = ( i + 1 )
+}
+
+if ( 5 > 3 ) {
+  output "yes"
+}
+
+var wordy = "banana"
+if ( ( len wordy ) <= 3 ) {
+  output { wordy "is" "short" }
+ }else{
+  if ( ( len wordy ) <= 8 ) {
+    output { wordy "is" "medium" }
+  }else{
+    output { wordy "is" "long" }
+  }
+}

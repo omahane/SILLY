@@ -12,19 +12,20 @@ public class Assignment extends Statement {
      *   @param input the stream to be read from
      */
     public Assignment(TokenStream input) throws Exception {
-        this.vbl = input.next();
-        Token op = input.next();
-        if (this.vbl.getType() != Token.Type.IDENTIFIER || !op.toString().equals("=")) {
+        this.vbl = input.next(); // read in variable
+        Token op = input.next(); // read in equal
+        if (this.vbl.getType() != Token.Type.IDENTIFIER || !op.toString().equals("=")) { //test assignment
             throw new Exception("SYNTAX ERROR: Malformed assignment statement");
         }
-        this.expr = new Expression(input);
+        this.expr = new Expression(input); // save expression
     }
 
     /**
      * Executes the current assignment statement.
      */
     public void execute() throws Exception {
-        Interpreter.MEMORY.storeVariable(this.vbl, this.expr.evaluate());
+        Interpreter.MEMORY.storeVariable(this.vbl, this.expr.evaluate()); // MEMORY is static field of interpreter
+        // evaluate the right hand side, assigns to variable
     }
 
     /**
