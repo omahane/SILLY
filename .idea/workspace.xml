@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SILLY/Assignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SILLY/Assignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SILLY/Output.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SILLY/Output.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SILLY/Repeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SILLY/Repeat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SILLY/Statement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SILLY/Statement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Output.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statement.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Expression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
+            <state relative-caret-position="262">
+              <caret line="105" column="95" selection-start-line="105" selection-start-column="95" selection-end-line="105" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -293,7 +283,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551292178848" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551448763198" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
@@ -408,12 +398,12 @@
       <workItem from="1549485210404" duration="1986000" />
       <workItem from="1549850387270" duration="8056000" />
       <workItem from="1551231370866" duration="3331000" />
-      <workItem from="1551447777970" duration="54000" />
+      <workItem from="1551447777970" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14729000" />
+    <option name="totallyTimeSpent" value="15592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="779" extended-state="6" />
@@ -428,7 +418,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39215687" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39155748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -695,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
+        <state relative-caret-position="262">
+          <caret line="105" column="95" selection-start-line="105" selection-start-column="95" selection-end-line="105" selection-end-column="95" />
         </state>
       </provider>
     </entry>

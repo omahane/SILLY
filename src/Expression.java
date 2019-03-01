@@ -62,11 +62,13 @@ public class Expression {
         else if (this.op == null) {
             return this.expr1.evaluate();
         }
+
         else if (this.op.getType() == Token.Type.UNARY_OP) {
             String un_op = this.op.toString();
             DataValue rhsValue = this.expr2.evaluate();
-
-
+                /**
+                 * Add "len" unary operator functionality
+                 */
                 if (un_op.equals("len")) {
                     String str1 = rhsValue.toString();
                     return new IntegerValue(str1.length() - 2);
@@ -98,7 +100,13 @@ public class Expression {
                         return new StringValue(str1.substring(0,str1.length()-1) +
                                 str2.substring(1));
                     }
+                    else if (this.op.toString().equals("index")) {
+                        String str1 = lhsValue.toString();
+                        Integer indexNum = Integer.valueOf(rhsValue.toString());
+                        // TODO fill in logic around getting the 1-char substring using "index"
+                    }
                 }
+
                 else if (lhsValue.getType() == Token.Type.INTEGER) {
                     int num1 = ((Integer) (lhsValue.getValue()));
                     int num2 = ((Integer) (rhsValue.getValue()));
